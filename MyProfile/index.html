@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="amy.png" type="image/jpg" />
+    <title>MyProfile</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
+      body {
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .identity {
+        display: flex;
+        align-items: center;
+      }
+
+      .nametag {
+        margin-left: 15px;
+      }
+
+      .nametag h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      .contact {
+        font-size: 16px;
+        color: #ccc;
+      }
+
+      .img img {
+        height: 125px;
+        width: auto;
+        border-radius: 50%;
+      }
+
+      .column {
+        padding: 20px;
+        background-color: #fff;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .petak {
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        color: white;
+        background-color: #333;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .information {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .information td {
+        padding: 10px 0;
+        a {
+          text-decoration: none;
+          color: #333;
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #007bff;
+          }
+        }
+      }
+
+      .skills,
+      .projects {
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+        .identity {
+          flex-direction: column;
+          align-items: center;
+        }
+        .img img {
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="identity">
+        <div class="img">
+          <img src="amy.png" alt="Foto Profil" />
+        </div>
+        <div class="nametag">
+          <h1>Zidane Achmad Bastomi Alfarizy</h1>
+          <div class="contact">
+            Email: zidane.achmad118@smk.belajar.id<br />
+            Contact Number: +62 858-2902-4207
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="column">
+      <h1 class="petak">Sekolah</h1>
+      <table class="information">
+        <tbody>
+          <tr>
+            <td style="font-weight: bold">2014 - 2018</td>
+            <td>
+              <a
+                href="https://mambaulhisan.or.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SD Mambaul Hisan</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">2018 - 2019</td>
+            <td>SDN PARE 3</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">2019 - 2022</td>
+            <td>
+              <a
+                href="https://smpn4pare.sch.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SMPN 4 PARE</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold">2022 - Sekarang</td>
+            <td>
+              <a
+                href="https://www.smkpalapapare.sch.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SMK PALAPA PARE, Jurusan Rekayasa Perangkat Lunak (RPL)</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="column skills">
+      <h1 class="petak">Keahlian</h1>
+      <ul>
+        <li>Bahasa Pemrograman: HTML, CSS, JavaScript, Python</li>
+        <li>Pengembangan Web Dasar</li>
+        <li>Pengelolaan Basis Data Sederhana</li>
+        <li>Desain UI/UX Dasar</li>
+      </ul>
+    </section>
+
+    <section class="column projects">
+      <h1 class="petak">Proyek</h1>
+      <ul>
+        <li>Membuat Website Portofolio Pribadi</li>
+        <li>Aplikasi Schedule List menggunakan HTML, CSS, dan JavaScript</li>
+      </ul>
+    </section>
+  </body>
+</html>
